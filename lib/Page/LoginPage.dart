@@ -1,4 +1,5 @@
 //Login page
+import 'package:developer_q/models/Client.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../_import.dart';
@@ -12,6 +13,13 @@ class LoginPage extends ConsumerWidget {
           child: Scaffold(
             body: Column(
               children: [
+                MyButton(
+                  onPress: (){
+                    var client = new Client(firstName: "andrea",id: 3);
+                    DBProvider.db.newClient(client);
+                  },
+                  text: "insert"
+                )
               ],
             )
               ),

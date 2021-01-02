@@ -1,4 +1,6 @@
+import 'package:developer_q/widgets/Button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class MyDialog extends StatefulWidget {
   @override
@@ -18,7 +20,7 @@ class _MyDialogState extends State<MyDialog> {
         child: Container(
           height: screenSize.height*.88,
           width: screenSize.width*.88,
-          child: Text("Hello"),
+          child:MyButton(onPress: ()=>SystemNavigator.pop(), text: "exit")
         ),
       ),
     );

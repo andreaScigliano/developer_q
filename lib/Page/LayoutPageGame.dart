@@ -6,7 +6,7 @@ import './subPages/ListPage.dart';
 class LayoutPageGameState extends ConsumerWidget {
   
   final pages = [
-    CharacterPage(),
+    PurchasePage(),
     TaskPage()
   ];
 

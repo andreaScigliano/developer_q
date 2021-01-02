@@ -1,2 +1,2 @@
-export 'CharacterPage.dart';
+export 'PurchasePage.dart';
 export 'TaskPage.dart';
